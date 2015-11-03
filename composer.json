@@ -1,0 +1,14 @@
+{
+    "name": "eab/image-filter-bundle",
+    "description": "A bundle for eZ Publish that provides filters for use in image variations / aliases",
+    "license": "GPL-2.0",
+    "minimum-stability": "stable",
+    "require": {
+        "ezsystems/ezpublish-kernel": "~5.4|>=2014.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eab\\imageFilterBundle\\": ""
+        }
+    }
+}

@@ -1,0 +1,9 @@
+parameters:
+    mugo.image_alias.imagine.filter.loader.thumbnailgravityfilter.center.class: Eab\ImageFilterBundle\Imagine\Filter\Loader\ThumbnailGravityCenterFilterLoader
+
+services:
+    mugo.image_alias.imagine.filter.loader.thumbnailgravityfilter.center:
+        class: %mugo.image_alias.imagine.filter.loader.thumbnailgravityfilter.center.class%
+        public: false
+        tags:
+            - { name: liip_imagine.filter.loader, loader: "thumbnailgravityfilter/center" }
