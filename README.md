@@ -41,21 +41,21 @@ Requires eZ Publish 5.4 or above.
 
 1. Configure your own image variations/aliases in your bundle's `image_variations.yml`.
 
-For example:
+    For example:
 
-```
-system:
-    default:
-        image_variations:
-            my_nice_thumbnail:
-                reference: ~
-                filters:
-                    - { name: thumbnailgravityfilter/center, params: [300, 300] }
-```
+    ```
+    system:
+        default:
+            image_variations:
+                my_nice_thumbnail:
+                    reference: ~
+                    filters:
+                        - { name: thumbnailgravityfilter/center, params: [300, 300] }
+    ```
 
 2. Use in your templates:
 
-```
-{% set thumbnail_image = ez_image_alias( content.getField( 'image' ), content.versionInfo, 'my_nice_thumbnail') %}
-<img class="responsive" src="{{ thumbnail_image.uri }}">
-```
+    ```
+    {% set thumbnail_image = ez_image_alias( content.getField( 'image' ), content.versionInfo, 'my_nice_thumbnail') %}
+    <img class="responsive" src="{{ thumbnail_image.uri }}">
+    ```
