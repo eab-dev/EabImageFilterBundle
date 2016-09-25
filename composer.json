@@ -4,7 +4,7 @@
     "license": "GPL-2.0",
     "minimum-stability": "stable",
     "require": {
-        "ezsystems/ezpublish-kernel": "~5.4|>=2014.11"
+        "ezsystems/ezpublish-kernel": "~5.4|~6.5|>=2014.11"
     },
     "autoload": {
         "psr-4": {
