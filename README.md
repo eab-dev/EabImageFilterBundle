@@ -46,9 +46,7 @@ to the array of bundles. Save it.
 
 ## Usage
 
-1. Configure your own image variations/aliases in your bundle's `image_variations.yml`.
-
-For example:
+1. Configure your own image variations/aliases in your bundle's `image_variations.yml`. For example:
 
 ```yml
     system:
