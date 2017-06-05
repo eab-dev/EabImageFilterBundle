@@ -25,25 +25,32 @@ Requires eZ Publish 5.4 or above.
 
 1. Either install using composer:
 
-        composer require --update-no-dev --prefer-dist eab/image-filter-bundle
+```bash
+composer require --update-no-dev --prefer-dist eab/image-filter-bundle
+```
+   
+or install the source as a submodule using git:
 
-    or install the source as a submodule using git:
 
-        git submodule add https://github.com/eab-dev/ImageFilterBundle src/Eab/ImageFilterBundle
+```bash
+git submodule add https://github.com/eab-dev/ImageFilterBundle src/Eab/ImageFilterBundle
+```
 
 2. Edit the function `registerBundles()` in `ezpublish/EzPublishKernel.php` and add the line:
 
-        new Eab\ImageFilterBundle\EabImageFilterBundle(),
+```php
+ new Eab\ImageFilterBundle\EabImageFilterBundle(),
+ ```
 
-    to the array of bundles. Save it.
+to the array of bundles. Save it.
 
 ## Usage
 
 1. Configure your own image variations/aliases in your bundle's `image_variations.yml`.
 
-    For example:
+For example:
 
-    ```
+```yml
     system:
         default:
             image_variations:
@@ -51,11 +58,11 @@ Requires eZ Publish 5.4 or above.
                     reference: ~
                     filters:
                         - { name: thumbnailgravityfilter/center, params: [300, 300] }
-    ```
+```
 
 2. Use in your templates:
 
-    ```
+```twig
     {% set thumbnail_image = ez_image_alias( content.getField( 'image' ), content.versionInfo, 'my_nice_thumbnail') %}
     <img class="responsive" src="{{ thumbnail_image.uri }}">
-    ```
+```
