@@ -1,27 +1,27 @@
 EabImageFilterBundle
 ====================
 
-##Summary
+## Summary
 
 eZ Publish 5 bundle for image variation filters.
 
 So far only 1 filter is provided: `thumbnailgravityfilter/center`.
 
-##Copyright
+## Copyright
 
 Based on
 [Image aliases and filters in eZ Publish 5.4+](http://www.mugo.ca/Blog/Image-aliases-and-filters-in-eZ-Publish-5.4).
 Many thanks Thiago for this useful tutorial!
 
-##License
+## License
 
 Licensed under [GNU General Public License 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 
-##Requirements
+## Requirements
 
 Requires eZ Publish 5.4 or above.
 
-##Installation
+## Installation
 
 1. Either install using composer:
 
@@ -37,7 +37,7 @@ Requires eZ Publish 5.4 or above.
 
     to the array of bundles. Save it.
 
-##Usage
+## Usage
 
 1. Configure your own image variations/aliases in your bundle's `image_variations.yml`.
 
